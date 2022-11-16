@@ -1,8 +1,13 @@
-body {color:red;
-font-size: large;}
-head {color:rebeccapurple;}
-header { width: 812px;
-    height: 69px;
-    background-color: green;
-background-image: url(228.jpg);
+body {
+  color: red;
+  font-size: large;
+}
+head {
+  color: rebeccapurple;
+}
+header {
+  width: 812px;
+  height: 69px;
+  background-color: green;
+  background-image: url(228.jpg);
 }
