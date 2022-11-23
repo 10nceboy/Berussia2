@@ -1,13 +1,125 @@
-body {
-  color: red;
-  font-size: large;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(.//vars.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
-head {
-  color: rebeccapurple;
+
+a {
+  text-decoration: none;
 }
-header {
-  width: 812px;
-  height: 69px;
-  background-color: green;
-  background-image: url(228.jpg);
+
+nav {
+  height: 100%;
 }
+
+/*.container {display: flex
+  ;}* /*flex container for layout*/
+
+.header-wrapper {
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 100%;
+  height: 8%;
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid;
+  border-bottom-color: var(--separator_color);
+  justify-content: space-between;
+  align-items: center;
+}
+.mnu-wrapper {
+  display: flex;
+  flex-shrink: 2;
+  max-width: 1153px;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  max-width: 144px;
+  max-height: 100%;
+  min-width: 144px;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.menu a, menu a:active {
+  color: var(--black_button);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.button1,
+.button2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  align-items: center;
+}
+.button1 {
+  color:#1B1B23;
+  font-weight: 500;
+  margin-left: 24px;
+  margin-right: 12px;
+  border: 1px solid;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  border-radius: 10px;
+  border-color: var(--btn_border_color);
+  background-color: white;
+  transition: 0,5s;
+}
+
+.button1:hover,.button1:active {
+  border-color: var(--black_button);
+  color:black;
+
+  transition: 0,5s;
+}
+
+.button2 {
+  background-color: #000;
+  border: 1px solid #1b1b23;
+  border-radius: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  color: white;
+  transition: 0.5s;
+}
+
+.button2:hover, .button2:active {
+  background-color: var(--hover_black_btn);
+}
+
+/*@media screen and (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }*/
+
