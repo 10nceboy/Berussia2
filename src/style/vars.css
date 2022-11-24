@@ -1,0 +1,9 @@
+:root {
+  --lightgray-1: rgba(211, 212, 223, 1);
+  --black-1: #1b1b23;
+  --lightgray-2: rgb(240, 240, 240);
+  --black-2: rgba(69, 69, 81, 1);
+  --white-1: rgb(255, 255, 255);
+  --gray:#999AAA;
+  --cw:calc(100vw - 200px);
+}
