@@ -12,9 +12,13 @@ a {
   text-decoration: none;
 }
 
+
+
 .container {
-  width: var(--cw);
+  width: var(--container-width);
   margin: 0 auto;
+  align-items: center;
+  height: 100%;
 }
 
 .container_flex-row {
@@ -23,17 +27,20 @@ a {
   flex-direction: row;
 }
 
+.container_flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 .header {
   border-bottom: 1px solid var(--lightgray-1);
+  height: 78px;
 }
 
 .header_menu {
   margin-left: auto;
-}
-
-.header_logo img {
-  height: 100%;
-  width: 100%;
 }
 
 .header_menu-list {
@@ -94,4 +101,88 @@ a {
 .button_button-black:hover,
 .button_button-black:active {
   background-color: var(--black-2);
+}
+
+.hero {
+  height: 919px;
+  border-bottom: 1px solid var(--lightgray-2);
+}
+.hero__hero-rightside {
+  margin-left: auto;
+}
+
+.hero__hero-leftside {
+  margin-right: auto;
+  align-self: flex-start;
+  margin-top: 235px;
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+}
+
+.hero__hero-leftside_paragraph-1 {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 110%;
+  color: var(--black-1);
+  margin-block-start: 0;
+  margin-inline-end: 0;
+}
+
+.hero__hero-leftside_paragraph-5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--gray);
+  margin-top: 32px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.hero__hero-leftside_chips {
+  display: flex;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.hero__hero-leftside_chips li {
+  margin: 0 6px;
+  border-radius: 24px;
+  padding: 12px 14px;
+  text-align: center;
+}
+
+.hero__hero-leftside_chips li:first-child {
+  margin-left: 0;
+}
+.hero__hero-leftside_chips li:last-child {
+  margin-right: 0;
+}
+
+.chip__chip-yellow {
+  background-color: var(--lightyellow);
+}
+
+.chip__chip-green {
+  background-color: var(--lightgreen);
+}
+
+.chip__chip-purple {
+  background-color: var(--lightpurple);
+}
+
+.chip__chip-blue {
+  background-color: var(--lightblue-2);
+}
+
+.button__hero {
+  width: 344px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 20px 72px;
+  font-size: 18px;
+  margin-top: 48px;
+  margin-left: 0;
 }
