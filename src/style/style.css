@@ -138,7 +138,7 @@ height: 100%;
   margin-block-end: 0;
 }
 
-.hero__hero-left_tags {
+.hero__hero-left_chips {
   display: flex;
   margin-bottom: 24px;
   font-weight: 400;
@@ -146,39 +146,37 @@ height: 100%;
   line-height: 150%;
 }
 
-.hero__hero-left_tags li {
+.hero__hero-left_chips li {
   margin: 0 6px;
   border-radius: 24px;
   padding: 12px 14px;
   text-align: center;
 }
 
-.hero__hero-left_tags li:first-child {
+.hero__hero-left_chips li:first-child {
   margin-left: 0;
 }
-.hero__hero-left_tags li:last-child {
+.hero__hero-left_chips li:last-child {
   margin-right: 0;
 }
 
-.hero__hero-letf_tag-yellow {
+.chip__chip-yellow {
   background-color: var(--lightyellow);
 }
 
-.hero__hero-left_tag-green {
+.chip__chip-green {
   background-color: var(--lightgreen);
 }
 
-.hero__hero-left_tag-purple {
+.chip__chip-purple {
   background-color: var(--lightpurple);
 }
 
-.hero__hero-left_tag-blue {
+.chip__chip-blue {
   background-color: var(--lightblue-2);
 }
 
-.hero__button {
-  width: 344px;
-  height: 60px;
+.button__hero {
   padding: 20px 72px;
   font-size: 18px;
   margin-top: 48px;
