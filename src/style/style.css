@@ -6,6 +6,7 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -60,7 +61,6 @@ a {
 .header_menu-list a,
 .header_menu-list a:active {
   color: var(--black_1);
-  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -73,7 +73,6 @@ a {
 
 .button_button-black,
 .button_button-white {
-  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -119,11 +118,9 @@ a {
   margin-right: auto;
   align-self: flex-start;
   margin-top: 235px;
-  font-family: 'Inter', sans-serif;
   font-style: normal;
 }
-
-.paragraph__paragraph-1 {
+h1 {
   font-weight: 600;
   font-size: 72px;
   line-height: 110%;
@@ -132,7 +129,7 @@ a {
   margin-inline-end: 0;
 }
 
-.paragraph__paragraph-5 {
+h5 {
   font-weight: 500;
   font-size: 20px;
   line-height: 130%;
@@ -190,9 +187,7 @@ a {
   margin-top: 48px;
   margin-left: 0;
 }
-
-.paragraph__paragraph-3 {
-  font-family: 'Inter', sans-serif;
+h3 {
   align-self: flex-start;
   font-size: 32px;
   line-height: 115%;
@@ -204,8 +199,8 @@ a {
 }
 
 .howdoesitwork {
-  height: 537px;
   justify-content: space-between;
+  height: 537px;
 }
 .howdoesitwork__cards {
   margin-left: 0;
@@ -213,32 +208,38 @@ a {
   padding-top: 40px;
 }
 .card {
-  font-family: 'Inter', sans-serif;
   color: var(--black-1);
 }
 
 .card__card-howdoesitwork {
-  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 24px var(--lightgray-3), 0px 0px 2px var(--lightgray-3);
   border-radius: 32px;
-  width: 418px;
-  height: 332px;
-margin-right: 16px;
+  flex-basis: 25%;
+ min-height: 332px;
+ margin-right: 16px;
+ flex-grow: 1;
 }
+
+.card__card-howdoesitwork:last-child {
+ margin-right: 0px;
+}
+
+
 .card__card-howdoesitwork_image {
   width: 184px;
   height: 176px;
   padding-left: 40px;
   padding-right: 194px;
   padding-top: 40px;
+  flex-shrink: 0;
   flex-grow: 3;
 }
 
 .card_card-howdoesitwork-textblock {
   display: flex;
   font-size: 22px;
-  padding-left: 40px;
-  padding-bottom: 40px;
-  padding-top: 24px;
+  padding:24px 0px 40px 40px;
+  
 }
 
 .button_button-arrow {
