@@ -88,7 +88,6 @@ a {
 }
 .button_button-white {
   color: var(--black-1);
-  font-weight: 500;
   margin-left: 24px;
   border: 1px solid var(--lightgray-1);
   padding: 16px 32px;
@@ -643,4 +642,18 @@ h3 {
   height: 8px;
   width: 8px;
   background-color: var(--lightgray-1);
+}
+
+
+.header__avatar-menu-button {
+  padding: 10px 32px;
+ width: 268px;
+ height: 48px;
+ justify-content: space-between;
+ position: fixed;
+ z-index: 1;
+}
+
+.header__avatar-dropdown-menu {
+  
 }
