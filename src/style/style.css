@@ -220,7 +220,6 @@ h6 {
 
 .chip__chip-blue {
   background-color: var(--lightblue-2);
-  
 }
 
 .button__hero {
@@ -574,7 +573,7 @@ h3 {
   padding-top: 8px;
   font-weight: 400;
   margin-bottom: 16px;
-  border-radius:99px;
+  border-radius: 99px;
 }
 .mentor__tags {
   margin-bottom: 8px;
@@ -644,16 +643,44 @@ h3 {
   background-color: var(--lightgray-1);
 }
 
-
 .header__avatar-menu-button {
   padding: 10px 32px;
- width: 268px;
- height: 48px;
- justify-content: space-between;
- position: fixed;
- z-index: 1;
+  width: 268px;
+  height: 48px;
+  justify-content: space-between;
+}
+
+.header__avatar-dropdown {
+  position: relative;
+  z-index: 1;
 }
 
 .header__avatar-dropdown-menu {
-  
+  display: none;
+  position: absolute;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  z-index: 100;
+  margin-left: 24px;
+  min-width: 268px;
+  background-color: var(--white-1);
+}
+.header__avatar-dropdown-menu li {
+  display: flex;
+  padding: 16px 28px;
+  align-items: center;
+}
+
+.header__avatar-dropdown-menu a {
+  color: var(--black-1);
+}
+
+.header__avatar-dropdown-menu li:last-child {
+  border-top: 1px solid var(--lightgray-1);
+}
+.header__avatar-dropdown:hover .header__avatar-dropdown-menu {
+  display: block;
+}
+.header__avatar-dropdown-menu li:hover {
+  background-color: var(--lightgray-1);
 }
